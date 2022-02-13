@@ -1,0 +1,82 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 3rem;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.yours {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 900px;
+  margin-top: 3rem;
+}
+
+
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.connectButton {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input, .button {
+  background-color: transparent;
+  color: white;
+  font-family: '55';
+  padding: .5rem;
+  font-size: 2rem;
+  width: 60%;
+  border: 2px solid rgb(114, 233, 178);
+  border-radius: 4px 0 0 4px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: rgb(114, 233, 178);
+  color: black;
+  width: 30%;
+  border-radius: 0 4px 4px 0;
+}
+
+.button:hover{
+  background-color: rgb(112, 209, 164);
+}
