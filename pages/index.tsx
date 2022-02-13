@@ -73,9 +73,8 @@ const Home: NextPage = () => {
             <h2 className={styles.yours}>Your anons</h2>
             <div className={styles.grid}>
               {value.map((anon) => {
-                console.log({ anon });
                 return (
-                  <AnonCard key={anon.id} image={anon.image} name={anon.name} />
+                  <AnonCard key={anon.name} image={anon.image} name={anon.name} />
                 );
               })}
             </div>
